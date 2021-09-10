@@ -1,0 +1,17 @@
+<div class="bg-blue-400 w-1/2 shadow-lg mt-24 mx-auto rounded">
+  <header class="bg-blue-500 h-14 flex items-center justify-center rounded">
+    <h1 class="text-4xl text-white">Chat</h1>
+  </header>
+
+  <section class="p-6">
+    <.form let={f} for={:join_chat} phx-submit="join_chat">
+      <%= label f, :username, class: "text-white" %>
+      <%= text_input f, :username, class: "w-full text-2xl rounded" %>
+
+      <%= label f, :room, class: "text-white mt-3 block" %>
+      <%= select f, :chat_room, @chat_rooms, class: "w-full text-xl rounded" %>
+
+      <%= submit "Join Chat", class: "text-2xl text-white bg-blue-800 py-2 w-full mt-5 hover:bg-blue-700 rounded" %>
+    </.form>
+  </section>
+</div>
