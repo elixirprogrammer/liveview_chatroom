@@ -2,7 +2,7 @@ defmodule MyChatWeb.PageLive do
   use MyChatWeb, :live_view
 
   @chat_rooms [
-    "Elixir": "elixir",
+    Elixir: "elixir",
     Phoenix: "phoenix",
     LiveView: "liveView",
     Tailwind: "tailwind",

@@ -13,7 +13,8 @@ defmodule MyChat.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: MyChat.PubSub},
       # Start the Endpoint (http/https)
-      MyChatWeb.Endpoint
+      MyChatWeb.Endpoint,
+      MyChatWeb.Presence
       # Start a worker by calling: MyChat.Worker.start_link(arg)
       # {MyChat.Worker, arg}
     ]
